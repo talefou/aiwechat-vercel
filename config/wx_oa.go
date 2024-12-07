@@ -56,8 +56,8 @@ func GetWxHelpReply() string {
 	helpMsg := os.Getenv(Wx_Help_Reply_key)
 	if helpMsg == "" {
 		helpMsg = "选择功能吧 🎯\n📖 查看帮助 (/help)\n🤖 与GPT对话 (/gpt)\n🚀 与星火对话 (/spark)\n🐦 与通义千问对话 (/qwen)\n🌟 与gemini对话 (/gemini)\n" +
-			"✍️ 设置system prompt (/prompt)\n📄 获取当前设置prompt (/getpt)\n🧹 清除当前设置prompt (/cpt)\n" +
-			"🛠️ 设置自定义model (/setmodel model)\n🔧 重置model为默认值 (/setmodel)\n📋 获取当前model (/getmodel)\n" +
+			"✍️ 设置系统提示 (/prompt)\n📄 获取当前设置提示 (/getpt)\n🧹 清除当前设置提示 (/cpt)\n" +
+			"🛠️ 设置自定义模型 (/setmodel model)\n🔧 重置模型为默认值 (/setmodel)\n📋 获取当前模型 (/getmodel)\n" +
 			"🗑️ 清除历史对话 (/clear)\n" + "✅ 设置待办事项 (/ta)\n" + "📜 获取代办列表 (/tl)\n" + "❌ 删除索引代办事件 (/td)\n" + "💰 查询价格 (/cb)"
 	}
 	return strings.ReplaceAll(helpMsg, "\\n", "\n")
